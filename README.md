@@ -2,7 +2,7 @@
 
 This simple demonstration of multithreading in Java portrays thread-safe 
 synchronization using the Producer-Consumer design paradigm. 
-
+You can clone and run this project, and there is also an Eclipse project archive in the repository that you can import.
 
 # 4 Classes are present:
   - ProdConMain --> Simple driver, handles input and creation of threads.
