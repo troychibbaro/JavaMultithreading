@@ -1,0 +1,8 @@
+
+ProdCons/.classpath
+ProdCons/.project
+ProdCons/.settings/org.eclipse.jdt.core.prefs
+ProdCons/bin/prodcons/Consumer.class
+ProdCons/bin/prodcons/Hub.class
+ProdCons/bin/prodcons/ProdConMain.class
+ProdCons/bin/prodcons/Producer.class
