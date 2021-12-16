@@ -5,7 +5,6 @@ import java.util.Stack;
 
 public class Hub {
 	private Stack<Integer> ints = new Stack<Integer>();
-	private boolean available = false;
 	
 	public synchronized int get() {
 		while(ints.size() == 0) {
