@@ -35,6 +35,9 @@ public class ProdConMain {
 						new Consumer(hub);
 					}
 					break;
+				case 4:
+					running = false;
+					break;
 					
 					
 				default: System.out.println(input + " is invalid");
