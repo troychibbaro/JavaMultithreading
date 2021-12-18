@@ -5,6 +5,7 @@ import java.util.Stack;
 
 public class Hub {
 	private Stack<Integer> ints = new Stack<Integer>();
+	private final int MAX_SIZE = 100;
 	
 	public synchronized int get() {
 		while(ints.size() == 0) {
@@ -23,6 +24,11 @@ public class Hub {
 	}
 	
 	public synchronized void put(int number) {
+		while(ints.size() <= MAX_SIZE) {
+			try {
+				wait();
+			} catch (InterruptedException e){}
+		}
 		ints.add(number);
 		notifyAll();
 	}
